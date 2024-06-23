@@ -13,6 +13,7 @@ class registro_cuentas {
         float factor_de_carga = 0.0;
         cuenta tabla*; // Aca se almacenaran los elementos de la tabla
         int ranuras = 15; // Cuantas ranuras tiene la tabla hash (inicialmente)
+        numElementos = 0 // El número de elementos en la tabla
 
     /*****
     * int hash
@@ -107,10 +108,46 @@ class registro_cuentas {
         return cuenta(); // Cuenta vacía si no se encuentra
     }
 
+   /*****
+    * void agregar
+    ******
+    * Agrega una cuenta a la tabla hash
+    ******
+    * Input:
+    * cuenta c : Cuenta a agregar
+    ******
+    * Returns:
+    * void, No retorna valor
+    *****/
 
  void agregar(cuenta c); // Se agrega una cuenta a la tabla
 
+    /*****
+    * void eliminar
+    ******
+    * Elimina una cuenta de la tabla hash
+    ******
+    * Input:
+    * string rol : Rol del estudiante a eliminar
+    ******
+    * Returns:
+    * void, No retorna valor
+    *****/
+
  void eliminar(string rol); // Se elimina la cuenta
+
+    /*****
+    * void modificar
+    ******
+    * Modifica la descripción de una cuenta dada por el rol
+    ******
+    * Input:
+    * string rol : Rol del estudiante
+    * string descripcion : Nueva descripción para la cuenta
+    ******
+    * Returns:
+    * void, No retorna valor
+    *****/
 
  void modificar(string rol, string descripcion); // Se modifica la descripcion del rol
     
@@ -152,7 +189,7 @@ class registro_cuentas {
     * No tiene input como tal
     ******
     * Returns:
-    * 
+    * void, no tiene un return como tal. Imprime las ranuras ocupadas, las ranuras totales y el factor de carga.
     *****/
 
     void estadisticas() {
