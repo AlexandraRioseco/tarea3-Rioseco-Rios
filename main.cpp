@@ -2,6 +2,8 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include <Pruebaaa.cpp>
+
 int main() {
     registro_cuentas registro;
     ifstream archivo("pruebas.txt");
