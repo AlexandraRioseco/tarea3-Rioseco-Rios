@@ -31,5 +31,6 @@ int main() {
         else if (comando == "ESTADISTICAS"){
 
         }
-      
+      archivo.close();
+    return 0;
     }
