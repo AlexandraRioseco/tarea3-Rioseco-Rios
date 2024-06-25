@@ -1,2 +1,2 @@
-Nombre: Alexandra Kleantys Rioseco Paiva | ROL: 202373600-7 | Paralelo: 203 | Detalle: Programó las funciones hash, p, obtener, redimensionar y estadísticas, hizo los archivos README.txt y nombres.txt.
-Nombre: Bastián Leandro Rios Lastarria| ROL: 202351551-5 | Paralelo: 203  | Detalle: Programó las funciones ...
+Nombre: Alexandra Kleantys Rioseco Paiva | ROL: 202373600-7 | Paralelo: 203 | Detalle: Programó las funciones hash, p, obtener, redimensionar y estadísticas, hizo los archivos readme.txt y nombres.txt.
+Nombre: Bastián Leandro Rios Lastarria| ROL: 202351551-5 | Paralelo: 203  | Detalle: Programó las funciones main, agregar, modificar y eliminar, y encargado de que funcionen los casos de prueba y editar/finalizar el README.txt
