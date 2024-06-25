@@ -110,6 +110,18 @@ public:
         return cuenta(); // Cuenta vacía si no se encuentra
     }
 
+   /*****
+    * void agregar
+    ******
+    * Agrega una cuenta a la tabla hash
+    ******
+    * Input:
+    * cuenta c : Cuenta a agregar
+    ******
+    * Returns:
+    * void, No retorna valor
+    *****/
+
     void agregar(cuenta c) {
         // Verificar si el rol ya existe
         for (int i = 0; i < ranuras; ++i) {
@@ -132,6 +144,18 @@ public:
         }
     }
 
+   /*****
+    * void eliminar
+    ******
+    * Elimina una cuenta de la tabla hash
+    ******
+    * Input:
+    * string rol : Rol del estudiante a eliminar
+    ******
+    * Returns:
+    * void, No retorna valor
+    *****/
+
     void eliminar(string rol) {
         for (int i = 0; i < ranuras; i++) {
             int idx = p(rol, i);
@@ -143,6 +167,19 @@ public:
         }
     }
 
+    /*****
+    * void modificar
+    ******
+    * Modifica la descripción de una cuenta dada por el rol
+    ******
+    * Input:
+    * string rol : Rol del estudiante
+    * string descripcion : Nueva descripción para la cuenta
+    ******
+    * Returns:
+    * void, No retorna valor
+    *****/
+
     void modificar(string rol, string descripcion) {
         for (int i = 0; i < ranuras; i++) {
             int idx = p(rol, i);
@@ -152,6 +189,18 @@ public:
             }
         }
     }
+
+    /*****
+    * void redimensionar
+    ******
+    * Redimensiona la tabla hash a un nuevo tamaño.
+    ******
+    * Input:
+    * int n : Nuevo tamaño de la tabla hash
+    ******
+    * Returns:
+    * Void, no hace un return como tal.
+    *****/
 
     void redimensionar(int n) {
         cuenta* nuevaTabla = new cuenta[n];
@@ -169,6 +218,18 @@ public:
         delete[] tabla;
         tabla = nuevaTabla;
     }
+
+    /*****
+    * void estadísticas
+    ******
+    * Provee las estadísticas de la tabla actual
+    ******
+    * Input:
+    * No tiene input como tal
+    ******
+    * Returns:
+    * void, no tiene un return como tal. Imprime las ranuras ocupadas, las ranuras totales y el factor de carga.
+    *****/
 
     void estadisticas() {
         float factor_de_carga = (float)numElementos / ranuras;
