@@ -2,7 +2,7 @@
 #include <fstream>
 #include <sstream>
 #include <string>
-#include <Pruebaaa.cpp>
+#include <tarea3-Rioseco-Rios.cpp>
 
 int main() {
     registro_cuentas registro;
